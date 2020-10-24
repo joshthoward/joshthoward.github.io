@@ -1,0 +1,19 @@
+baseURL = "http://iidblog.com"
+languageCode = "en-us"
+title = "IID Blog"
+theme = "hugo_theme_materialize_css"
+paginate = 5
+googleAnalytics = "UA-144555390-1"
+
+[params]
+    author = "Josh Howard"
+    avatar = "/img/headshot.jpg"
+    bio = """
+        An emerging technologies consultant specializing in data
+        science. Previously a research scientist at a technology startup, a
+        graduate of the Georgia Institute of Technology, and a recipient of a
+        National Science Foundation Fellowship.
+        """
+    twitter = "JoshuaH51361535"
+    github = "joshthoward"
+    linkedin = "joshthoward"

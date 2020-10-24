@@ -1,0 +1,30 @@
+{{ define "main" }}
+<main>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12">
+          <div class="card-panel">
+            {{ $baseurl := .Site.BaseURL | sanitizeurl }}
+            <article>
+              <div id="single-header">
+                <h3><a href="{{ $baseurl }}">{{ .Title }}</a></h3>
+                {{ if .Date }}
+                <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format "2 Jan 2006" }}</time>
+                {{ end }}
+                <p>
+                  {{ range .Params.tags }}
+                  <a href="{{ $baseurl }}/tags/{{ . | urlize }}">#{{ . }}</a>
+                  {{ end }}
+                </p>
+              </div>
+              <div class="divider"></div>
+              <p>{{ .Content }}</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{{ end }}

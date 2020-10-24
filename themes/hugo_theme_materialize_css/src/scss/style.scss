@@ -1,0 +1,15 @@
+@charset 'utf-8';
+
+$primary-color: #FFFFFF;
+$primary-color-light: #4f5b62; 
+$primary-color-dark: #000a12;
+
+$secondary-color: #004d40;
+$secondary-color-light: #39796b;
+$secondary-color-dark: #00251a;
+
+$footer-copyright-bg-color: $secondary-color;
+
+@import '~materialize-css';
+
+@import 'base/__base-dir';

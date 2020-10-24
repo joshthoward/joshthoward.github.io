@@ -1,0 +1,12 @@
+name = "hugo_theme_materialize_css"
+license = "BSD-3-Clause"
+licenselink = "https://github.com/joshthoward/hugo_theme_materialize_css/blob/master/LICENSE"
+description = "A Hugo theme based on Materialize CSS"
+homepage = "http://example.com/"
+tags = []
+features = []
+min_version = "0.41"
+
+[author]
+  name = "Josh Howard"
+  homepage = "joshthoward.github.io"

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IID Blog</title>
+    <link>http://iidblog.com/</link>
+    <description>Recent content on IID Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://iidblog.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MNIST Two Ways</title>
+      <link>http://iidblog.com/post/11-23-2019/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://iidblog.com/post/11-23-2019/</guid>
+      <description>I have recently been interested in switching from the Keras and TensorFlow deep learning frameworks to the PyTorch framework. Rather than making a thorough and passionate internet argument on why I believe that PyTorch is the better choice, I think a comparison between implementations of a simple neural network (MNIST) says enough about the decision to switch.
+For the sake of comparison, I initially wanted to implement MNIST in both TensorFlow and PyTorch.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://iidblog.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://iidblog.com/about/</guid>
+      <description>iidblog is a play on words. For the mathematics and statistics communities, iid is an initialism which stands for independent and identically distributed and describes a desirable property of random variables for machine learning. For this blog, iid describes the sentiment of my take at yet another professional blog on machine learning.
+I hope you enjoy.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,111 @@
+{{ if or ( .Site.Params.twitter ) ( .Site.Params.facebook ) ( .Site.Params.instagram ) ( .Site.Params.github ) ( .Site.Params.gitlab ) ( .Site.Params.npm ) ( .Site.Params.codepen ) ( .Site.Params.dribbble ) ( .Site.Params.fivehundredpx ) ( .Site.Params.flickr ) ( .Site.Params.pinterest ) ( .Site.Params.tumblr ) ( .Site.Params.vimeo ) ( .Site.Params.youtube ) ( .Site.Params.linkedin ) }}
+<div class="row">
+  <ul class=" center list-inline">
+    {{ with .Site.Params.twitter }}
+    <li class="">
+      <a href="https://twitter.com/{{ . }}" target="_blank">
+        <i class="fab fa-twitter-square"></i>
+      </a>
+    </li>
+    {{ end }}
+    {{ with .Site.Params.facebook }}
+    <li class="">
+      <a href="https://facebook.com/{{ . }}" target="_blank">
+        <i class="fab fa-facebook-square"></i>
+      </a>
+    </li>
+    {{ end }}
+    {{ with .Site.Params.instagram }}
+    <li class="">
+      <a href="https://instagram.com/{{ . }}" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+    {{ end }}
+    {{ with .Site.Params.github }}
+    <li class="">
+      <a href="https://github.com/{{ . }}" target="_blank">
+        <i class="fab fa-github-square"></i>
+      </a>
+    </li>
+    {{ end }}
+    {{ with .Site.Params.gitlab }}
+    <li class="">
+      <a href="https://gitlab.com/{{ . }}" target="_blank">
+        <i class="fab fa-gitlab"></i>
+      </a>
+    </li>
+    {{ end }}
+    {{ with .Site.Params.npm }}
+    <li class="">
+      <a href="https://www.npmjs.com/{{ . }}" target="_blank">
+        <i class="fab fa-npm"></i>
+      </a>
+    </li>
+    {{ end }}
+    {{ with .Site.Params.codepen }}
+    <li class="">
+      <a href="https://codepen.io/{{ . }}" target="_blank">
+        <i class="fab fa-codepen"></i>
+      </a>
+    </li>
+    {{ end }}
+    {{ with .Site.Params.dribbble }}
+    <li class="">
+      <a href="https://dribbble.com/{{ . }}" target="_blank">
+        <i class="fab fa-dribbble-square"></i>
+      </a>
+    </li>
+    {{ end }}
+    {{ with .Site.Params.fivehundredpx }}
+    <li class="">
+      <a href="https://500px.com/{{ . }}" target="_blank">
+        <i class="fab fa-500px"></i>
+      </a>
+    </li>
+    {{ end }}
+    {{ with .Site.Params.flickr }}
+    <li class="">
+      <a href="https://www.flickr.com/photos/{{ . }}" target="_blank">
+        <i class="fab fa-flickr"></i>
+      </a>
+    </li>
+    {{ end }}
+    {{ with .Site.Params.pinterest }}
+    <li class="">
+      <a href="https://www.pinterest.jp/{{ . }}" target="_blank">
+        <i class="fab fa-pinterest-square"></i>
+      </a>
+    </li>
+    {{ end }}
+    {{ with .Site.Params.tumblr }}
+    <li class="">
+      <a href="https://www.tumblr.com/blog/{{ . }}" target="_blank">
+        <i class="fab fa-tumblr-square"></i>
+      </a>
+    </li>
+    {{ end }}
+    {{ with .Site.Params.vimeo }}
+    <li class="">
+      <a href="https://vimeo.com/{{ . }}" target="_blank">
+        <i class="fab fa-vimeo"></i>
+      </a>
+    </li>
+    {{ end }}
+    {{ with .Site.Params.youtube }}
+    <li class="">
+      <a href="https://www.youtube.com/user/{{ . }}" target="_blank">
+        <i class="fab fa-youtube-square"></i>
+      </a>
+    </li>
+    {{ end }}
+    {{ with .Site.Params.linkedin }}
+    <li class="">
+      <a href="https://linkedin.com/in/{{ . }}" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

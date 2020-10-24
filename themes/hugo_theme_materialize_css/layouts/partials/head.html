@@ -1,0 +1,75 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<!--Standard meta tags -->
+<title>{{ .Title | default .Site.Title }} by
+       {{ .Params.Author | default .Site.Params.Author }}</title>
+<meta name="description" content="{{ .Description | default .Site.Params.Subtitle }}">
+<meta name="author" content="{{ .Params.Author | default .Site.Params.Author }}"/>
+<!-- Open Graph meta tags -->
+{{ if .IsPage }}
+<meta property="og:type" content="article"> 
+{{ with .Site.Params.facebook }}
+<meta property="og:article:author" content="https://facebook.com/{{ . }}" />
+{{ end }}
+{{ else }}
+<meta property="og:type" content="website"> 
+{{ end }}
+{{ with .Title | default .Site.Title }}
+<meta property="og:title" content="{{ . }}">
+{{ end }}
+{{ with .Summary | default .Site.Params.Subtitle }}
+<meta property="og:description" content="" />
+{{ end }}
+<!-- Add thumbnail <meta property="og:image" content="" /> -->
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<!-- Twitter meta tags -->
+<meta name="twitter:card" content="summary">
+{{ with .Title | default .Site.Title }}
+<meta name="twitter:title" content="{{ . }}">
+{{ end }}
+{{ with .Summary | default .Site.Params.Subtitle | truncate 200 }}
+<meta name="twitter:description" content="{{ . }}">
+{{ end }}
+<!-- Add thumbnail <meta name="twitter:image" content="{{ . | absURL }}"> -->
+{{ with .Site.Params.twitter }}
+<meta name="twitter:site" content="@{{ . }}">
+<meta name="twitter:creator" content="@{{ . }}">
+{{ end }}
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans&display=swap" >
+<link rel="stylesheet" href="{{ .Site.BaseURL }}/style.css">
+{{ template "_internal/google_analytics_async.html" . }}
+{{ if .Params.mathjax }}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        extensions: ["AMSmath.js", "AMSsymbols.js"]
+      }
+    },
+    // Autonumber equations
+    TeX: {
+      equationNumbers: { autoNumber: "AMS" }
+    }
+  });
+  MathJax.Hub.Queue(function() {
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+{{ end }}

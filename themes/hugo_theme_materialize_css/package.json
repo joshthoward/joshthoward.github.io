@@ -1,0 +1,24 @@
+{
+  "name": "hugo_theme_materialize_css",
+  "version": "1.0.0",
+  "description": "A Hugo theme based on Materialize CSS",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "author": "Josh Howard",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8"
+  },
+  "dependencies": {
+    "materialize-css": "^1.0.0"
+  }
+}

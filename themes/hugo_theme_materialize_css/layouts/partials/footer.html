@@ -1,0 +1,23 @@
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col m3 s12">
+        <img id="avatar-img" alt="Author Avatar" class="responsive-img"
+             src="{{ .Site.Params.avatar }}" />
+      </div>
+      <div class="col m9 s12">
+        <h5>{{ .Site.Params.author }}</h5>
+        <p>{{ .Site.Params.bio }}</p>
+      </div>
+    </div>
+    {{- partial "social.html" . -}}
+  </div>
+  <div class="footer-copyright">
+    <div class="container center">
+      <a href="/">
+        &copy; {{ dateFormat "2006" now }} {{ .Site.Params.author }}
+      </a>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="{{ .Site.BaseURL }}/bundle.js"></script>
