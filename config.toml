@@ -1,3 +1,5 @@
+publishDir = "docs"
+
 baseURL = "http://iidblog.com"
 languageCode = "en-us"
 title = "IID Blog"
