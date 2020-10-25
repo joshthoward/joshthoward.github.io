@@ -3,41 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>iidblog.com/</loc>
+    <loc>https://iidblog.com/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>iidblog.com/tags/keras/</loc>
+    <loc>https://iidblog.com/tags/keras/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>iidblog.com/post/11-23-2019/</loc>
+    <loc>https://iidblog.com/post/11-23-2019/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>iidblog.com/post/</loc>
+    <loc>https://iidblog.com/post/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>iidblog.com/tags/pytorch/</loc>
+    <loc>https://iidblog.com/tags/pytorch/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>iidblog.com/tags/</loc>
+    <loc>https://iidblog.com/tags/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>iidblog.com/about/</loc>
+    <loc>https://iidblog.com/about/</loc>
   </url>
   
   <url>
-    <loc>iidblog.com/categories/</loc>
+    <loc>https://iidblog.com/categories/</loc>
   </url>
   
 </urlset>

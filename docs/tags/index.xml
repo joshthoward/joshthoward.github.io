@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on IID Blog</title>
-    <link>iidblog.com/tags/</link>
+    <link>https://iidblog.com/tags/</link>
     <description>Recent content in Tags on IID Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="iidblog.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://iidblog.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Keras</title>
-      <link>iidblog.com/tags/keras/</link>
+      <link>https://iidblog.com/tags/keras/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>iidblog.com/tags/keras/</guid>
+      <guid>https://iidblog.com/tags/keras/</guid>
       <description></description>
     </item>
     
     <item>
       <title>PyTorch</title>
-      <link>iidblog.com/tags/pytorch/</link>
+      <link>https://iidblog.com/tags/pytorch/</link>
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>iidblog.com/tags/pytorch/</guid>
+      <guid>https://iidblog.com/tags/pytorch/</guid>
       <description></description>
     </item>
     
