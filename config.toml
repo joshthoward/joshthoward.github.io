@@ -1,6 +1,6 @@
 publishDir = "docs"
 
-baseURL = "http://iidblog.com"
+baseURL = "iidblog.com"
 languageCode = "en-us"
 title = "IID Blog"
 theme = "hugo_theme_materialize_css"
