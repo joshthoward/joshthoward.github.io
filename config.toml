@@ -5,7 +5,6 @@ languageCode = "en-us"
 title = "IID Blog"
 theme = "hugo_theme_materialize_css"
 paginate = 5
-googleAnalytics = "G-LCZS8VZ6P6"
 
 [params]
     author = "Josh Howard"
@@ -19,3 +18,4 @@ googleAnalytics = "G-LCZS8VZ6P6"
     twitter = "JoshuaH51361535"
     github = "joshthoward"
     linkedin = "joshthoward"
+    googleAnalytics = "G-7MS8ZZ0F0S"
