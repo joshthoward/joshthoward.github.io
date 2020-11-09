@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on IID Blog</title>
-    <link>https://iidblog.com/post/</link>
-    <description>Recent content in Posts on IID Blog</description>
+    <title>Elasticsearch on IID Blog</title>
+    <link>https://iidblog.com/tags/elasticsearch/</link>
+    <description>Recent content in Elasticsearch on IID Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://iidblog.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://iidblog.com/tags/elasticsearch/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PageRank?!</title>
       <link>https://iidblog.com/post/11-08-2020/</link>
@@ -16,16 +16,6 @@
       <description>Here is a quick update of what I have been working on&amp;hellip;
 Amundsen My current team has been working on an open source data discovery and metadata engine, Amundsen, which is hosted by the LF AI &amp;amp; Data Foundation. Overall, it has been a great experience using and contributing to the application.
 Being interested machine learning, the product claim of &amp;ldquo;a PageRank style search based on usage patterns&amp;rdquo; sounds great. Taking it a step further, the product website promises to enable users to discover trusted data with the following text:</description>
-    </item>
-    
-    <item>
-      <title>MNIST Two Ways</title>
-      <link>https://iidblog.com/post/11-23-2019/</link>
-      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://iidblog.com/post/11-23-2019/</guid>
-      <description>I have recently been interested in switching from the Keras and TensorFlow deep learning frameworks to the PyTorch framework. Rather than making a thorough and passionate internet argument on why I believe that PyTorch is the better choice, I think a comparison between implementations of a simple neural network (MNIST) says enough about the decision to switch.
-For the sake of comparison, I initially wanted to implement MNIST in both TensorFlow and PyTorch.</description>
     </item>
     
   </channel>

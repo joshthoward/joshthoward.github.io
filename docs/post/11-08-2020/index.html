@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head><script async src="https://www.googletagmanager.com/gtag/js?id=G-7MS8ZZ0F0S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7MS8ZZ0F0S');
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+
+<title>PageRank?! by
+       Josh Howard</title>
+<meta name="description" content="">
+<meta name="author" content="Josh Howard"/>
+
+
+<meta property="og:type" content="article"> 
+
+
+
+<meta property="og:title" content="PageRank?!">
+
+
+<meta property="og:description" content="" />
+
+
+<meta property="og:url" content="https://iidblog.com/post/11-08-2020/" />
+<meta property="og:site_name" content="IID Blog" />
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:title" content="PageRank?!">
+
+
+<meta name="twitter:description" content="Here is a quick update of what I have been working on&hellip;
+Amundsen My current team has been working on an open source data discovery and metadata engine, Amundsen, which is hosted by the LF AI …">
+
+
+
+<meta name="twitter:site" content="@JoshuaH51361535">
+<meta name="twitter:creator" content="@JoshuaH51361535">
+
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans&display=swap" >
+<link rel="stylesheet" href="https://iidblog.com/style.css">
+
+</head>
+  <body><header>
+  <nav class="page-nav" role="navigation">
+    <div class="nav-wrapper container">
+      
+      <a id="logo-container" href="/" class="brand-logo">IID Blog</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a class="dropdown-trigger" href="/" data-target="dropdown1">Tags<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+      <a href="/" data-target="nav-mobile" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul id="dropdown1" class="dropdown-content">
+        
+        <li><a href="/tags/amundsen">#amundsen</a></li>
+        <li class="divider"></li>
+        
+        <li><a href="/tags/elasticsearch">#elasticsearch</a></li>
+        <li class="divider"></li>
+        
+        <li><a href="/tags/keras">#keras</a></li>
+        <li class="divider"></li>
+        
+        <li><a href="/tags/neo4j">#neo4j</a></li>
+        <li class="divider"></li>
+        
+        <li><a href="/tags/pytorch">#pytorch</a></li>
+        <li class="divider"></li>
+        
+      </ul>
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="/">Home</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="/about">About</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Tags</a></li>
+        
+        <li><a href="/tags/amundsen">#amundsen</a></li>
+        
+        <li><a href="/tags/elasticsearch">#elasticsearch</a></li>
+        
+        <li><a href="/tags/keras">#keras</a></li>
+        
+        <li><a href="/tags/neo4j">#neo4j</a></li>
+        
+        <li><a href="/tags/pytorch">#pytorch</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12">
+          <div class="card-panel">
+            
+            <article>
+              <div id="single-header">
+                <h3><a href="https://iidblog.com">PageRank?!</a></h3>
+                
+                <time datetime="2020-11-08T00:00:00Z">8 Nov 2020</time>
+                
+                <p>
+                  
+                  <a href="https://iidblog.com/tags/amundsen">#Amundsen</a>
+                  
+                  <a href="https://iidblog.com/tags/neo4j">#Neo4j</a>
+                  
+                  <a href="https://iidblog.com/tags/elasticsearch">#Elasticsearch</a>
+                  
+                  <a href="https://iidblog.com/tags/recommender-system">#Recommender System</a>
+                  
+                </p>
+              </div>
+              <div class="divider"></div>
+              <p><p>Here is a quick update of what I have been working on&hellip;</p>
+<h5 id="amundsen">Amundsen</h5>
+<p>My current team has been working on an open source data discovery and metadata
+engine, <a href="https://github.com/amundsen-io/amundsen">Amundsen</a>, which is hosted
+by the <a href="https://lfaidata.foundation/">LF AI &amp; Data Foundation</a>. Overall, it has
+been a great experience using and contributing to the application.</p>
+<p>Being interested machine learning, the product claim of &ldquo;a PageRank style
+search based on usage patterns&rdquo; sounds great. Taking it a step further, the
+product <a href="https://www.amundsen.io/">website</a> promises to enable users to
+discover trusted data with the following text:</p>
+<blockquote>
+<p>Search for data within your organization by a simple text search. A
+PageRank-inspired search algorithm recommends results based on names,
+descriptions, tags, and querying/viewing activity on the table/dashboard.</p>
+</blockquote>
+<p>Again, sounds great! I thought it would be interesting to see how they
+implemented their PageRank style algorithm given a graph with multiple node and
+edge types. After diving in, the product claims seem to be more marketing than
+reality. In both the search and metadata services, a PageRank style algorithm
+seems yet to be implemented. To be fair, the user experience does not seem to
+suffer, but there is definitely room for improvement.</p>
+<p>In the metadata service <a href="https://github.com/amundsen-io/amundsenmetadatalibrary/blob/v2.5.4/metadata_service/proxy/neo4j_proxy.py#L706">code</a>,
+the linked comment describes the popularity score used to rank tables according
+to their usage patterns:</p>
+<blockquote>
+<p><code>popularity score = number of distinct readers + log(total number of reads)</code></p>
+</blockquote>
+<p>This might be a valid heuristic or a minimal implementation of collaborative
+filtering, but this is definitely not
+<a href="https://neo4j.com/docs/graph-data-science/current/algorithms/page-rank/">PageRank</a>
+and probably does not qualify as &ldquo;PageRank style&rdquo;. As a heuristic, the code
+author mentions that the scoring function applies a logarithm on the total
+number of reads so that score will not be affected by small number of users
+repeatedly reading the same table. The search service
+<a href="https://github.com/amundsen-io/amundsensearchlibrary/blob/v2.3.3/search_service/proxy/elasticsearch.py#L130">code</a>
+follows a similar heuristic which is implemented using a
+<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-function-score-query.html#function-field-value-factor">function field value factor</a>
+in Elasticsearch. Overall, the heuristic seems reasonable. Viewed as a minimal
+implementation of collaborative filtering, user behavior is being used as a
+feature in the recommender system, but again, there is definitely room for
+improvement.</p>
+<h5 id="where-to-go-next">Where to go next?!</h5>
+<p>I plan on focusing on a few key improvements:</p>
+<ol>
+<li>
+<p><em>Identify a performance metric for the recommender system</em> - A measure of
+performance will enable the tracking of recommender system improvements;
+a metric such as click-through rate is an easy choice, but the Amundsen
+user feedback capability could also be used to measure success.</p>
+</li>
+<li>
+<p><em>Enable user customization</em> - The ability to pass user information to the
+recommender system will allow for customized recommendations on a per-user
+basis ideally improving user experience.</p>
+</li>
+<li>
+<p><em>Improve upon collaborative filtering</em> - The ability to incorporate
+additional features into the collaborative filtering algorithm should
+improve performance.</p>
+</li>
+<li>
+<p><em>Incorporate content-based filtering</em> - A hybrid approach of both
+collaborative and content-based filtering, using data asset features in
+addition to user behavior features, should further improve performance.</p>
+</li>
+<li>
+<p><em>Extend the recommender system to new data assets</em> - Enabling the recommender
+system to recommend other data assets, e.g. users and dashboards, will
+improve the overall user experience.</p>
+</li>
+</ol>
+<p>I hope to post updates on my progress over the coming weeks.</p>
+<h5 id="unfortunate-naming">Unfortunate naming</h5>
+<p>Unfortunately Amundsen is named after
+<a href="https://en.wikipedia.org/wiki/Roald_Amundsen">Roald Amundsen</a> who is credited
+with the first expedition to the South Pole and also the approach &ldquo;&hellip; to kill
+some of his dogs on the way and use them as a source for fresh meat&rdquo;. In
+another story of unfortunate naming, I&rsquo;ve learned that IID also stands for
+ignition interlock device, which is a DUI prevention tool. SEO is going to be
+fun.</p>
+</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col m3 s12">
+        <img id="avatar-img" alt="Author Avatar" class="responsive-img"
+             src="/img/headshot.jpg" />
+      </div>
+      <div class="col m9 s12">
+        <h5>Josh Howard</h5>
+        <p>        An emerging technologies consultant specializing in data
+        science. Previously a research scientist at a technology startup, a
+        graduate of the Georgia Institute of Technology, and a recipient of a
+        National Science Foundation Fellowship.
+        </p>
+      </div>
+    </div>
+<div class="row">
+  <ul class=" center list-inline">
+    
+    <li class="">
+      <a href="https://twitter.com/JoshuaH51361535" target="_blank">
+        <i class="fab fa-twitter-square"></i>
+      </a>
+    </li>
+    
+    
+    
+    
+    <li class="">
+      <a href="https://github.com/joshthoward" target="_blank">
+        <i class="fab fa-github-square"></i>
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+      <a href="https://linkedin.com/in/joshthoward" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+</div>
+  <div class="footer-copyright">
+    <div class="container center">
+      <a href="/">
+        &copy; 2020 Josh Howard
+      </a>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="https://iidblog.com/bundle.js"></script>
+</body>
+</html>

@@ -3,8 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://iidblog.com/tags/amundsen/</loc>
+    <lastmod>2020-11-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://iidblog.com/tags/elasticsearch/</loc>
+    <lastmod>2020-11-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://iidblog.com/</loc>
-    <lastmod>2019-11-23T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://iidblog.com/tags/neo4j/</loc>
+    <lastmod>2020-11-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://iidblog.com/post/11-08-2020/</loc>
+    <lastmod>2020-11-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://iidblog.com/post/</loc>
+    <lastmod>2020-11-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://iidblog.com/tags/recommender-system/</loc>
+    <lastmod>2020-11-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://iidblog.com/tags/</loc>
+    <lastmod>2020-11-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -18,17 +53,7 @@
   </url>
   
   <url>
-    <loc>https://iidblog.com/post/</loc>
-    <lastmod>2019-11-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://iidblog.com/tags/pytorch/</loc>
-    <lastmod>2019-11-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://iidblog.com/tags/</loc>
     <lastmod>2019-11-23T00:00:00+00:00</lastmod>
   </url>
   
