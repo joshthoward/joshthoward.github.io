@@ -6,7 +6,17 @@
     <description>Recent content in Elasticsearch on IID Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://iidblog.com/tags/elasticsearch/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://iidblog.com/tags/elasticsearch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Amundsen user personalization</title>
+      <link>https://iidblog.com/post/11-13-2020/</link>
+      <pubDate>Fri, 13 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://iidblog.com/post/11-13-2020/</guid>
+      <description>Following up on my last post about Amundsen&amp;rsquo;s not so PageRank inspired heuristic, the hypothesis is that personalized data discovery will lead to a better user experience. Personalization can take two forms, popular tables and search results. Here we will focus on popular tables.
+The first step of personalizing popular tables is going to be passing the authenticated user context to the appropriate place in the codebase. From the architecture diagram, we know that the two services that are in scope of the change are going to be the frontend and the metadata service.</description>
+    </item>
+    
     <item>
       <title>PageRank?!</title>
       <link>https://iidblog.com/post/11-08-2020/</link>
